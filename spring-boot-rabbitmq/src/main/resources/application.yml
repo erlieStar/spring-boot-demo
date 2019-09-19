@@ -1,6 +1,7 @@
 spring:
   rabbitmq:
     host: www.erlie.cc
-    prot: 5672
+    port: 5672
     username: guest
     password: guest
+    virtual-host: /
