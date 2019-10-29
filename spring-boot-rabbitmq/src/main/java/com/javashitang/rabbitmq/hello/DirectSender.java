@@ -1,6 +1,6 @@
-package com.erlie.rabbitmq.hello;
+package com.javashitang.rabbitmq.hello;
 
-import com.erlie.rabbitmq.constants.RabbitMqConsts;
+import com.javashitang.rabbitmq.constants.RabbitMqConsts;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

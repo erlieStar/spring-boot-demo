@@ -1,4 +1,4 @@
-package com.erlie.rabbitmq.constants;
+package com.javashitang.rabbitmq.constants;
 
 public interface RabbitMqConsts {
 

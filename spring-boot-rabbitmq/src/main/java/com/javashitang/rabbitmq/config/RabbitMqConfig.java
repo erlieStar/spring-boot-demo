@@ -1,7 +1,7 @@
-package com.erlie.rabbitmq.config;
+package com.javashitang.rabbitmq.config;
 
-import com.erlie.rabbitmq.constants.RabbitMqConsts;
-import com.erlie.rabbitmq.hello.DirectUserReceiver;
+import com.javashitang.rabbitmq.constants.RabbitMqConsts;
+import com.javashitang.rabbitmq.hello.DirectUserReceiver;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;

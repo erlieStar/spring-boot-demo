@@ -1,0 +1,4 @@
+spring:
+  redis:
+    host: www.javashitang.com
+    port: 5672

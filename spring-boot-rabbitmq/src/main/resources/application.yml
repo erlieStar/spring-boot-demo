@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: www.erlie.cc
+    host: www.javashitang.com
     port: 5672
     username: guest
     password: guest

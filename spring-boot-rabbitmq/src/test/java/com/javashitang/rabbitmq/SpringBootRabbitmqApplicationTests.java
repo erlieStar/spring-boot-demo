@@ -1,6 +1,6 @@
-package com.erlie.rabbitmq;
+package com.javashitang.rabbitmq;
 
-import com.erlie.rabbitmq.hello.DirectSender;
+import com.javashitang.rabbitmq.hello.DirectSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

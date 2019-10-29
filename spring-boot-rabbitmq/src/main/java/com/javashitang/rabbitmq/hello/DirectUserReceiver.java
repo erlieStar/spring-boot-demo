@@ -1,4 +1,4 @@
-package com.erlie.rabbitmq.hello;
+package com.javashitang.rabbitmq.hello;
 
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.Message;
