@@ -2,6 +2,8 @@ package com.javashitang.mybatis;
 
 import static org.junit.Assert.assertTrue;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.javashitang.mybatis.dao.BookDao;
 import com.javashitang.mybatis.entity.Book;
 import com.javashitang.mybatis.mapper.BookMapper;
@@ -38,6 +40,27 @@ public class SpringBootMybatisPlusApplicationTest {
     public void test2() {
         Book book = bookDao.selectById(1);
         System.out.println(book);
+    }
+
+    @Test
+    public void test3() {
+        Page<Book> page = new Page<>(0, 2);
+        IPage<Book> bookIPage = bookMapper.selectAll(page);
+        System.out.println(bookIPage.getRecords());
+    }
+
+    @Test
+    public void test4() {
+        Page<Book> page = new Page<>(1, 2);
+        IPage<Book> bookIPage = bookMapper.selectAll(page);
+        System.out.println(bookIPage.getRecords());
+    }
+
+    @Test
+    public void test5() {
+        Page<Book> page = new Page<>(2, 2);
+        IPage<Book> bookIPage = bookMapper.selectAll(page);
+        System.out.println(bookIPage.getRecords());
     }
 
 }
