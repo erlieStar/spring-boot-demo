@@ -60,6 +60,7 @@ public class SpringBootMybatisPlusApplicationTest {
     public void test5() {
         Page<Book> page = new Page<>(2, 2);
         IPage<Book> bookIPage = bookMapper.selectAll(page);
+        System.out.println(bookIPage.getTotal());
         System.out.println(bookIPage.getRecords());
     }
 
