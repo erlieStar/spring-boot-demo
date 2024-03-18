@@ -1,0 +1,25 @@
+spring:
+  shardingsphere:
+    datasource:
+      m1:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: root
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+        username: root
+      names: m1
+    props:
+      sql:
+        show: true
+    sharding:
+      tables:
+        order:
+          actual-data-nodes: m1.order_$->{2023..2025}
+          key-generator:
+            column: id
+            type: SNOWFLAKE
+          table-strategy:
+            standard:
+              precise-algorithm-class-name: com.javashitang.sharding.algorithm.MyTablePreciseAlgorithm
+              range-algorithm-class-name: com.javashitang.sharding.algorithm.MyTableRangeAlgorithm
+              sharding-column: order_code
